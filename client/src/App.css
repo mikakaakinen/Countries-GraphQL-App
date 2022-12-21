@@ -1,0 +1,23 @@
+td {
+    border: 1px solid #000;
+}
+
+.notification-container {
+    /*  background-color: #f9bf3b; */
+    color: #fff;
+    background-color: #1f3a93;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: fixed;
+    top: 50%;
+    left: -1000px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.notification-container p {
+    margin: 0;
+}
+
+.notification-container.show {
+    transform: translate(1000px, -50%);
+}
