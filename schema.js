@@ -84,7 +84,7 @@ const RootQuery = new GraphQLObjectType({
             resolve(parent, args) {
                 console.log('Args are =', args);
                 return axios
-                    .get(`https://restcountries.com/v2/name/${args.name}`)
+                    .get(`https://restcountries.com/v3.1/name/${args.name}`)
                     .then((res) => res.data);
             },
         },
