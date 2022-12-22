@@ -6,7 +6,7 @@ import SearchForm from './components/Form';
 import Header from './components/Header';
 
 const client = new ApolloClient({
-    uri: '/graphql',
+    uri: 'http://localhost:5000/graphql',
     cache: new InMemoryCache(),
 });
 
